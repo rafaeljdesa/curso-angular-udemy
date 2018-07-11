@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var base_ships_1 = require("./base-ships");
+var starfighters_1 = require("./starfighters");
+var _ = require("lodash");
+console.log(_.pad("Typescript Examples", 40, "="));
+var ship = new base_ships_1.Spacecraft("hiperdrive");
+ship.jumpIntoHiperspace();
+var falcon = new starfighters_1.MillenniumFlacon();
+falcon.jumpIntoHiperspace();
+var goodForTheJob = function (ship) { return ship.cargoContainers > 2; };
+console.log("Is falcon is good for the job ? " + (goodForTheJob(falcon) ? 'YES' : 'NO'));
