@@ -46,8 +46,4 @@ export class OrderService{
                                 .map(response=> response.json())
     }
 
-    test(): void{
-
-    }
-
 }
